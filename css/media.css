@@ -1,0 +1,274 @@
+@media  only screen and (max-width:1200px)
+{
+    .container
+    {
+        width: 90%;
+    }
+}
+@media  only screen and (max-width:977px)
+{
+    .discount
+    {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+    .discount-item1
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .category-item div span:last-child
+    {
+        width: 100%;
+        bottom: -15%;
+        left: 0px;
+    }
+}
+@media  only screen and (max-width:890px)
+{
+    .nav
+    {
+        grid-template-columns: repeat(5,1fr);
+    }
+    .nav > div:first-child
+    {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        text-align: center;   
+    }
+    .nav > div:nth-child(2)
+    {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .category-services
+    {
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: minmax(100px,auto);
+        gap: 20px 100px;
+    }
+    .category-services-item
+    {
+        border: 0;
+        border-top: 1px solid var(--gray);
+        padding-top: 15px;
+    }
+    .category-services-item:last-child
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .slider
+    {
+        margin-top: 160px;
+    }
+    .dropdown
+    {
+        grid-template-columns: repeat(3,100px);
+        left: -13%;
+        line-height: 24px;
+        padding: 15px;
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:775px)
+{
+    .category-shop
+    {
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .category-item div span:last-child
+    {
+        width: 10%;
+        height: 8%;
+        bottom: 0;
+        left: 90%;
+        font-size: 17px;
+        line-height: 156%;
+    }
+    .feature-item-container
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width:700px)
+{
+    .container
+    {
+        width: 95%;
+    }
+    .navbar
+    {
+        padding: 11px 0;
+    }
+    .nav
+    {
+        grid-template-columns: 40% 40% 20%;
+    }
+    .nav > div:first-child
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .nav > div:first-child img
+    {
+        width: 60%;
+    }
+    .nav > div:nth-child(2)
+    {
+        position: absolute;
+        top: 104%;
+        right: 1%;
+        background: white;
+        border: 1.5px solid var(--brown1);
+        z-index: -1;
+        transform: scale(1,0);
+        transition: transform 0.3s;
+        transform-origin: top;
+        padding: 10px 10px 0 10px;
+        width: 26%;
+    }
+    .nav div:nth-child(2) ul
+    {
+        grid-template-columns: 1fr;
+    }
+    .nav > div:first-child,
+    .nav div:nth-child(3) ul li
+    {
+        text-align: left;
+    }
+    .nav div:nth-child(2) ul li
+    {
+        border-bottom: 1px solid var(--gray);
+        height: 0px;
+        padding: 14px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        width: 100%;
+    }
+    .nav div:nth-child(2) ul li:hover::before,
+    .nav div:nth-child(2) ul li:hover::after
+    {
+        transform: scale(0,0);
+    }
+    .nav >div:nth-child(4)
+    {
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav div:nth-child(3) ul i
+    {
+        font-size: 137%;
+    }
+    .dropdown
+    {
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        border: 0;
+        transform: scale(1,1);
+    }
+    .dropdown div
+    {
+        position: absolute;
+        top: 24%;
+        font-size: 12px;
+        background: white;
+        border: 1.5px solid var(--brown1);
+        width: 30%;
+        text-align: center;
+        line-height: 29px;
+        color: var(--brown);
+        transform: scale(1,0);
+        transition: transform 0.2s;
+        transform-origin: top;
+    }
+    .dropdown >div:first-child
+    {
+        left: -38.5%;
+        height: 89px;
+    }
+    .nav >div:nth-child(2) >ul >li:first-child:hover .dropdown>div:first-child
+    {
+        transform: scale(1,1);
+    }
+    .dropdown >div:nth-child(2)
+    {
+        display: none;
+    }
+    .dropdown >div:nth-child(3)
+    {
+        left: -60%;
+        height: 120px;
+    }
+    
+    .dropdown >div:nth-child(4)
+    {
+        left: -60%;
+        top: 134%;
+        height: 118px;
+    }
+    .dropdown >div:nth-child(5)
+    {
+        left: -60%;
+        top: 235%;
+        height: 118px;    
+    }
+    .slider
+    {
+        margin-top: 95px;
+    }
+    .feature-list ul
+    {
+        width: 80%;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:500px)
+{
+    .nav > div:nth-child(2)
+    {
+       width: 30%;
+    }
+    .nav div:nth-child(2) ul li >a
+    {
+        font-size: 106%;
+    }
+    .slider div
+    {
+        height: 250px;
+    }
+    .category-shop
+    {
+        grid-template-columns: 1fr;
+    }
+    .category-item
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .discount-item1-section2
+    ,.discount-item2 div:last-child
+    ,.category-services-item div:last-child
+    , .feature-list ul
+    {
+        font-size: 12px;
+    }
+    .feature-list ul
+    {
+        width: 90%;
+    }
+    .feature-item-container
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature-item
+    {
+        width: 80%;
+        margin: auto;
+    }
+}
